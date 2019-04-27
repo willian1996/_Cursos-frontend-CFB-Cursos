@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Javascript #10 - IF aninhado
+</title>
+    <script>
+        var nota = 100;
+        var res;
+        
+        if(nota >= 60){
+            res = "Aprovado";
+            if(nota >= 95){
+                res += " com louvor";
+            }else{
+                res += " com nota normal";
+            }
+        }else if(nota >= 40){
+            res = "Recuperação";
+        }else{
+            res = "Reprovado";
+            if(nota >= 20){
+                res += " por nota baixa";
+            }else{
+                res += " com louvor";
+            }  
+        }
+        
+        document.write(res);
+
+
+
+    </script>
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+    
+    
+    </style>
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+    
+    
+    
+    var dt = new Date(); 
+
+    
+    var diaMes = dt.getDate();
+    var diaSem = dt.getDay();
+    var mes = dt.getMonth();
+    var ano = dt.getFullYear();
+    
+    var meses = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+    
+    var semanas = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado");
+    
+    var horas = dt.getHours();
+    var minutos = dt.getMinutes();
+    var segundos = dt.getSeconds();
+    
+    
+    document.write('Dia da Semana: '+semanas[diaSem]+'<br> Dia do Mês: '+diaMes+'<br> Mês: '+meses[mes]+'<br> Ano: '+ano);
+    document.write('<br> Hora: ', horas+':'+minutos+':'+segundos);
+    
+    
+    
+    //INCREMENTANDO NA DATA 
+    
+    var ndt = new Date(1978, 03, 24); //Ano, Mes, Dia, Hora, Min, Seg, Mil
+    
+    
+    
+//  ndt.setDate(ndt.getDate());
+//  ndt.setFullYear(ndt.getFullYear()+2);
+    
+    var diaMes = ndt.getDate();
+    var diaSem = ndt.getDay();
+    var mes = ndt.getMonth();
+    var ano = ndt.getFullYear();
+    
+    var meses = new Array("Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro");
+    
+    var semanas = new Array("Domingo", "Segunda", "Terça", "Quarta", "Quinta", "Sexta", "Sabado");
+    
+    var horas = dt.getHours();
+    var minutos = dt.getMinutes();
+    var segundos = dt.getSeconds();
+    
+    
+    document.write('<hr> Dia da Semana: '+semanas[diaSem]+'<br> Dia do Mês: '+diaMes+'<br> Mês: '+meses[mes]+'<br> Ano: '+ano);
+    document.write('<br> Hora: ', horas+':'+minutos+':'+segundos);
+    
+    
+    
+    
+    
+
+
+    
+    
+    
+    
+    
+    
+</script>    
+</body>
+</html>

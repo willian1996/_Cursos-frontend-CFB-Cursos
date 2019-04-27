@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        .titulo{
+            color: #f00;
+            font-size: 20ox;
+            text-decoration: underline;
+        }
+        div{
+            border: 1px solid #000;
+            padding: 10px;
+            display: inline-block;
+        }
+        a{
+            display: block;
+                
+        }
+        .quadro{
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="titulo">querySelectorAll</h1>
+    <p>Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, .</p>
+    <h2 class="titulo">O que é Lorem Ipsum?</h2>
+    <p>quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos</p>
+    <p class="titulo">https://br.lipsum.com/</p>
+    <div >
+        <h3>JavaScript Aula 23</h3>
+        <p>Este texto está dentro de uma div</p>
+        <p>Este também</p>
+    </div>
+    <div class="quadro">
+        <h3>JavaScript Aula 23</h3>
+        <p>Este texto está dentro de uma div</p>
+        <p>Este também</p>
+    </div>
+    <a href="https://www.youtube.com/" target="_blank">YouTube</a>
+    <a href="https://cfbcursos.com.br/">Site</a>
+    <hr>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+<script>
+//    var ps = document.querySelectorAll('p');
+    
+//    document.write(ps[0].innerHTML);
+    
+//    ps[0].style.color = 'blue';
+    
+//    ps[0].innerHTML = 'Novo Texto';
+    
+    var elementos = document.querySelectorAll('h1, h2, h3');
+    
+    for(var i = 0; i < elementos.length; i++){
+        elementos[i].style.color = 'green';
+    }
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+</script>   
+</body>
+</html>
