@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #dv1{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            background-color: #FFF;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+    
+    
+    
+    </style>
+</head>
+<body>
+    <div id="dv1" onclick="addEvent()">
+    
+    
+    </div>
+    
+    
+    
+    
+    
+    
+    
+
+    
+<script>
+    /*
+    var px = 0;
+    var py = 0;
+    
+    
+    document.addEventListener('keydown', function(event){
+        var obj = document.getElementById('dv1');
+        var tecla = event.keyCode;
+        //37-esquerda - 38-Cima - 39-direita - 40-baixo
+        
+        if(tecla == 37){
+            px -= 10;
+            obj.style.left = px + 'px';   
+        }else if(tecla == 38){
+            py -= 10;
+            obj.style.top = py + 'px';
+        }else if(tecla == 39){
+            px += 10;
+            obj.style.left = px + 'px';
+        }else if(tecla == 40){
+            py += 10;
+            obj.style.top = py + 'px';
+        }
+        
+    });
+    */
+    
+    /* OUTRA MANEIRA DE FAZER O MESMO EVENTO
+    
+    var px = 0;
+    var py = 0;
+    
+    function move(){
+        var obj = document.getElementById('dv1');
+        var tecla = event.keyCode;
+        //37-esquerda - 38-Cima - 39-direita - 40-baixo
+        
+        if(tecla == 37){
+            px -= 10;
+            obj.style.left = px + 'px';   
+        }else if(tecla == 38){
+            py -= 10;
+            obj.style.top = py + 'px';
+        }else if(tecla == 39){
+            px += 10;
+            obj.style.left = px + 'px';
+        }else if(tecla == 40){
+            py += 10;
+            obj.style.top = py + 'px';
+        }else if(tecla == 13){
+            alert('Evento keydow removido');
+            document.removeEventListener('keydown', move);
+        }
+    }
+    
+    document.addEventListener('keydown', move);
+    */
+    
+    
+    
+    
+    //EXERCICIO 
+    
+    function addEvent(){
+        
+        //selecionando o elemento
+        var obj = document.getElementById('dv1');
+        var px = 0;
+        var py = 0;
+        
+        alert('Evento keydown adicionado!');
+        
+        //iniciando o background com vermelho
+        obj.style.backgroundColor = '#F00';
+        function move(){
+            var tecla = event.keyCode;
+            //37-esquerda - 38-Cima - 39-direita - 40-baixo
+
+            
+            //identificando a tecla apertada
+            if(tecla == 37){
+                px -= 10;
+                obj.style.left = px + 'px';   
+            }else if(tecla == 38){
+                py -= 10;
+                obj.style.top = py + 'px';
+            }else if(tecla == 39){
+                px += 10;
+                obj.style.left = px + 'px';
+            }else if(tecla == 40){
+                py += 10;
+                obj.style.top = py + 'px';
+            }else if(tecla == 13){
+                //removendo o evento apos o apertar o enter
+                alert('Evento keydow removido');
+                document.removeEventListener('keydown', move);
+                px = 0;
+                py = 0;
+                obj.style.top = py + 'px';
+                obj.style.left = px + 'px';
+                obj.style.backgroundColor = '#FFF';
+            }
+        }
+        //adicionado o evento principal da função
+        document.addEventListener('keydown', move);
+        
+    }
+    
+    
+    
+    
+    
+
+    
+    
+</script>    
+</body>
+</html>
