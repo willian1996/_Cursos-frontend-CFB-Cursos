@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style></style>
+</head>
+<body>
+    
+    
+    <p id="txt">CFB Cursos - Curso de Javascript - aula 46 do curso de javascript</p>
+    
+    
+    
+   
+    
+    
+<script>
+    // i busca sem case-sensitive
+    // g encontrar todas as ocorrencias com a palavra
+    // m normal sem armazenar em forma de array
+    // \d pesquisar que sao numerais
+    // \D pesquisar que não sao numerais
+    // \w não conta espaços
+    
+    
+    var texto = document.getElementById('txt').innerHTML;
+    
+    var res = texto.match(/\w/ig);
+    
+    document.write(res + ' : ' + res.length + '<br>');
+    
+    document.write(res[1]);
+    
+    
+    
+    
+</script>
+</body>
+</html>
