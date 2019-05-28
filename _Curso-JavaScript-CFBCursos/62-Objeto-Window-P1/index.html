@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style></style>
+</head>
+
+<body>
+    <button onclick="abreJ()"> Abre Nova Janela</button>
+    <button onclick="fechaJ()"> fechar Janela</button>
+    
+    
+    <iframe name="cfb" src=""></iframe>
+    
+    
+    
+    <script>
+        var minhaJanela;
+        
+        function abreJ(){
+            minhaJanela = window.open('tmp.html', '_blank', 'width=300, height=300, top=300, left=300');
+        }
+        
+        function fechaJ(){
+            minhaJanela.close();
+        }
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
