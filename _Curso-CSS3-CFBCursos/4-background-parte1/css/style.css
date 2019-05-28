@@ -1,0 +1,14 @@
+body{
+    background-color: #bbb;
+    background-image: url(../img/logo.jpg), url(../img/logob.jpg);
+    background-size: 100px;
+    background-repeat: no-repeat;
+    background-position: 200px 200px;
+}
+p{
+    font-size: 30pt;
+    background-image: url(../img/logob.jpg);
+    background-repeat: repeat-x;
+
+    
+}
