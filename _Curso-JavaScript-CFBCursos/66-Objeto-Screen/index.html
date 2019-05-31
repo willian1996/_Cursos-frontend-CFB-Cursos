@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        #painel{
+            width: 400px;
+            height: 500px;
+            border: 1px solid #000;
+            border-radius: 10px;
+            padding: 10px;
+        }
+    
+    
+    </style>
+</head>
+<body>
+    <div id="painel"></div>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        var painel;
+        
+        function inicia(){
+            painel = document.getElementById('painel');
+            painel.innerHTML += 'Largura: '+ screen.width + 'px<hr>';
+            painel.innerHTML += 'Altura: '+ screen.height + 'px<hr>';
+            painel.innerHTML += 'Lar: '+ screen.availWidth + 'px<hr>';
+            painel.innerHTML += 'Alt: '+ screen.availHeight + 'px<hr>';
+            
+            painel.innerHTML += 'Profundidade de cores (imagens): '+ screen.colorDepth+ 'bits<hr>';
+            painel.innerHTML += 'Resolução cor da tela (pixel): '+ screen.pixelDepth + 'bits/pixel';
+            
+        }
+        
+        inicia();
+    
+    
+    
+    
+    </script>
+</body>
+</html>

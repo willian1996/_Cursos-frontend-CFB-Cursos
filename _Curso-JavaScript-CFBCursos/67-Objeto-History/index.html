@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+    <h1>Index - index.html</h1>
+    <p id="info"></p>
+    
+    <a href="index.html">Home</a> |
+    <a href="p2.html">Página2</a> |
+    <a href="p3.html">Página3</a>
+    <hr>
+    <button id="btnBack">Voltar</button>
+    <button id="btnForward">Avançar</button>
+    <button id="btnback2"> voltar 2</button>
+    
+    
+    
+    
+    
+    <script>
+        var painel, btnB, btnF, btnG;
+        
+        function hB(){
+            window.history.back();
+        }
+        function hF(){
+            window.history.forward();
+        }
+        
+        function hG(){
+            window.history.go(-2);
+        }
+        
+        function inicia(){
+            btnB = document.getElementById('btnBack');
+            btnF = document.getElementById('btnForward');
+            btnG = document.getElementById('btnback2');
+            
+            btnB.addEventListener('click', hB);
+            btnF.addEventListener('click', hF);
+            btnG.addEventListener('click', hG);
+            
+            painel = document.getElementById('info');
+            painel.innerHTML = history.length;
+            
+            
+        }
+    
+        inicia();
+    
+    
+    </script>
+</body>
+</html>
