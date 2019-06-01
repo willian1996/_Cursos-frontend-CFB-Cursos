@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body{
+            background-color: #F00;
+        }
+        a{
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Página 2 - p2.html</h1>
+    <a href="index.html">Voltar</a>
+    <br>
+    
+    <script>
+        document.write('<hr>');
+        
+        var aux = location.hash;
+        var dados = aux.split('#');
+        var v1 = dados[1];
+        var v2 = dados[2];
+        document.write(v2);
+        
+        //url e redirecionamento 
+        document.write('<br>');
+        var h = location.href;
+        document.write(h);
+        
+        //protocolo, host, porta
+        document.write('<br>');
+        var o = location.origin; 
+        document.write(o);
+        
+        // caminho
+        document.write('<br>');
+        var p = location.pathname;
+        document.write(p);
+        
+        // protocolo
+        document.write('<br>');
+        var pr = location.protocol;
+        document.write(pr);
+        
+        document.write('<br>');
+        var aux = location.search;
+        var dados = aux.split('?');
+        var v1 = dados[1].split('=')[0];
+        
+        document.write(v1);
+        
+        
+        
+    
+    </script>
+</body>
+</html>
