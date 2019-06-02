@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    <script>
+        if(typeof(Storage) != 'undefined'){
+            //localStorage.setItem('canal', 'CFBCursos');
+
+            //localStorage.removeItem('canal');
+
+            //var vcal = localStorage.getItem('canal');
+
+            //var vcanal = localStorage.canal;
+
+            //document.write(vcanal);
+            
+            if(localStorage.visitas){
+                localStorage.visitas = Number(localStorage.visitas) + 1; 
+            }else{
+                //localStorage.setItem('visitas', 1);
+                localStorage.visitas = 1;
+            }
+            
+            document.write('Visitas: '+localStorage.visitas);
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+        }else{
+            document.write('Sem suporte ao web storage');
+        }
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    </script>
+</body>
+</html>
