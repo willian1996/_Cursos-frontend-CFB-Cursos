@@ -1,0 +1,70 @@
+#dvjogo{
+    width: 160px;
+    height: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.posJogo{
+    width: 50px;
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+#dvmenu{
+    margin-bottom: 10px;
+}
+/*TOPO ESQUERDO*/
+#p1{
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+/*TOPO CENTRO*/
+#p2{
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+/*TOPO DIREITO*/
+#p3{
+    border-left: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+/*MEIO ESQUERDO*/
+#p4{
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+/*MEIO CENTRO*/
+#p5{
+    border: 1px solid #000;
+}
+/*MEIO DIREITO*/
+#p6{
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+/*BAIXO ESQUERDO*/
+#p7{
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+/*BAIXO MEIO*/
+#p8{
+    border-left: 1px solid #000;
+    border-right: 1px solid #000;
+    border-top: 1px solid #000;
+}
+/*BAIXO DIREITO*/
+#p9{
+    border-left: 1px solid #000;
+    border-top: 1px solid #000;
+}
+

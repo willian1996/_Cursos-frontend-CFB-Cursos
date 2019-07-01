@@ -1,0 +1,12 @@
+body{
+    background: #FFF url(../img/imagem.jpg) no-repeat 0px 0px / 400px;
+    
+    
+    /*
+    background-color: #AAA;
+    background-image: url(../img/imagem.jpg);
+    background-repeat: repeat-x;
+    background-position: 0px 0px;
+    */
+    
+}
